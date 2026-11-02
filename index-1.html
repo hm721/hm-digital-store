@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>متجر HM Digital — كتب رقمية</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f6;--surface:#fff;--text:#18181b;--muted:#5f5f68;--accent:#e8501a;--accent-ink:#fff;--line:#e7e3df;--hero:#18181b;--hero-ink:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e10;--surface:#19191c;--text:#f3f1ee;--muted:#a3a1a8;--line:#2a2a2e;--hero:#19191c;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0e0e10;--surface:#19191c;--text:#f3f1ee;--muted:#a3a1a8;--line:#2a2a2e;--hero:#19191c;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Cairo',Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{max-width:1040px;margin:0 auto;padding:0 18px}
+header{display:flex;align-items:center;justify-content:space-between;padding:16px 0}
+.logo{font-weight:800;font-size:20px;letter-spacing:.5px}.logo b{color:var(--accent)}
+nav a{color:var(--muted);text-decoration:none;margin-inline-start:16px;font-size:15px}
+.hero{background:var(--hero);color:var(--hero-ink);border-radius:20px;padding:44px 24px;text-align:center;margin-top:8px}
+.hero h1{margin:0 0 10px;font-size:clamp(26px,5vw,40px);font-weight:800}
+.hero p{margin:0 auto 22px;max-width:560px;opacity:.85}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:12px 26px;border-radius:12px;text-decoration:none;font-weight:700;border:0;font-family:inherit;font-size:16px;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:18px;font-size:14px;opacity:.9}
+.badges span{border:1px solid rgba(255,255,255,.25);border-radius:99px;padding:3px 14px}
+h2{font-size:26px;margin:44px 0 18px;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,420px));gap:20px;justify-content:center}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;overflow:hidden;display:flex;flex-direction:column}
+.cover{aspect-ratio:4/3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:18px;color:#fff}
+.c1{background:linear-gradient(135deg,#4fb6f5 0%,#ffb347 100%)}
+.c1 .t{font-size:30px;font-weight:800;color:#f26a21;background:rgba(255,255,255,.92);padding:6px 16px;border-radius:12px}
+.c2{background:linear-gradient(135deg,#0b0b0c 0%,#3a1608 60%,#e8501a 130%)}
+.c2 .t{font-size:34px;font-weight:800}
+.cover .s{margin-top:8px;font-size:14px;opacity:.95}
+.body{padding:18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.body h3{margin:0;font-size:20px}
+.body p{margin:0;color:var(--muted);font-size:15px}
+.body ul{margin:4px 0;padding-inline-start:20px;color:var(--muted);font-size:15px}
+.price{font-size:24px;font-weight:800;margin-top:auto}.price small{font-size:14px;color:var(--muted);font-weight:400}
+.tag{align-self:flex-start;background:var(--accent);color:var(--accent-ink);font-size:12px;padding:1px 10px;border-radius:99px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;counter-reset:s}
+.step{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px;counter-increment:s}
+.step:before{content:counter(s);display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--accent);color:var(--accent-ink);font-weight:800;margin-bottom:8px}
+.step b{display:block}.step span{color:var(--muted);font-size:15px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:12px 16px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}details p{margin:8px 0 0;color:var(--muted)}
+footer{margin:48px 0 20px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div class="logo">HM <b>DIGITAL</b></div><nav><a href="#products">المنتجات</a><a href="#how">طريقة الشراء</a><a href="#faq">أسئلة</a></nav></header>
+
+<section class="hero">
+<h1>منتجات رقمية تبدأ من اليوم</h1>
+<p>برامج رياضية وكتب رقمية بصيغة PDF، تصلك فور تأكيد الدفع على واتساب. بدون انتظار شحن.</p>
+<a class="btn" href="#products">تصفح المنتجات</a>
+<div class="badges"><span>⚡ تسليم فوري</span><span>📱 يعمل على الهاتف</span><span>🖨️ قابل للطباعة</span></div>
+</section>
+
+<h2 id="products">المنتجات</h2>
+<div class="grid">
+<article class="card">
+<div class="cover c2"><div class="t">الجسد المحارب</div><div class="s">HM WARRIOR · كاراتيه + فيتنس + تغذية</div></div>
+<div class="body">
+<span class="tag">قريباً</span>
+<h3>الجسد المحارب</h3>
+<p>برنامج أسبوعي يجمع الكاراتيه واللياقة مع خطة غذائية وتحدي 30 يوماً.</p>
+<ul><li>تمارين مشروحة خطوة بخطوة</li><li>خطة غذائية لمدة 7 أيام</li><li>جداول متابعة التقدم</li></ul>
+<div class="price">السعر عند الإطلاق</div>
+<a class="btn ghost wa" data-n="الجسد المحارب (قائمة الانتظار)" data-p="" href="https://wa.me/213562171845" target="_blank" rel="noopener">احجز نسختك</a>
+</div>
+</article>
+</div>
+
+<h2 id="how">كيف تشتري؟</h2>
+<div class="steps">
+<div class="step"><b>اختر المنتج</b><span>اضغط زر الطلب وستفتح رسالة جاهزة على واتساب. وإن لم تفتح، راسلنا مباشرة على 0562171845.</span></div>
+<div class="step"><b>ادفع بسهولة</b><span>ترسل لك تفاصيل الدفع (CCP أو بريدي موب) في المحادثة.</span></div>
+<div class="step"><b>استلم ملفك</b><span>نرسل لك الـ PDF مباشرة بعد تأكيد الدفع.</span></div>
+</div>
+
+<h2 id="faq">أسئلة شائعة</h2>
+<details><summary>كيف أستلم الكتاب؟</summary><p>يصلك الملف عبر واتساب أو البريد بعد تأكيد الدفع.</p></details>
+<details><summary>ماذا لو واجهت مشكلة في الملف؟</summary><p>راسلنا على واتساب وسنعوّضك بنسخة سليمة.</p></details>
+
+<footer><span>© 2026 HM Digital · واتساب: <bdi>0562171845</bdi></span><span><a id="wa2" href="#">تواصل عبر واتساب</a></span></footer>
+</div>
+
+<script>
+// ضع رقمك هنا بالصيغة الدولية بدون + (مثال: 2136XXXXXXXX)
+var WA_NUMBER = "213562171845";
+function link(msg){return "https://wa.me/" + WA_NUMBER + "?text=" + encodeURIComponent(msg);}
+Array.prototype.forEach.call(document.querySelectorAll('a.wa'), function(a){
+  var n = a.getAttribute('data-n'), p = a.getAttribute('data-p');
+  a.href = link("السلام عليكم، أريد شراء: " + n + (p ? " (" + p + ")" : "") + ". كيف أدفع؟");
+});
+document.getElementById("wa2").href = link("السلام عليكم، لدي استفسار عن منتجاتكم.");
+</script>
+</body>
+</html>
